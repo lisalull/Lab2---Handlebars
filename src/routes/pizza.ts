@@ -37,8 +37,8 @@ pizzaRouter.get("/review", (req, res) => {
   res.render("review");
 });
 
-pizzaRouter.get("/thanks", (req, res) => {
-  const { name, comment, rating } = req.query;
+pizzaRouter.post("/thanks", (req, res) => {
+  const { name, comment, rating } = req.body;
   res.render("thanks", { name, comment, rating });
 });
 
@@ -46,11 +46,12 @@ pizzaRouter.get("/custom", (req, res) => {
   res.render("custom");
 });
 
-pizzaRouter.get("/your-pizza", (req, res) => {
-  let size: string = req.query.size as string;
-  let toppings: number = parseInt(req.query.toppings as string);
-  let glutenfree: boolean = (req.query.glutenfree as string) === "on";
-  let instructions: string = req.query.instructions as string;
+pizzaRouter.post("/your-pizza", (req, res) => {
+  //   let size: string = req.query.size as string;
+  //   let toppings: number = parseInt(req.query.toppings as string);
+  let glutenfree: boolean = (req.body.glutenfree as string) === "on";
+  //   let instructions: string = req.query.instructions as string;
+  let { size, toppings, instructions } = req.body;
   let price: number = 0;
   let freeDelivery: string = "";
   if (size === "small") {
