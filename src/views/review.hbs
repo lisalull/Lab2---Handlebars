@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name='/"viewport"' content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Review</title>
+  </head>
+  <body>
+    <h1>Leave a Review</h1>
+    <form action="/thanks" method="GET" class="review-form">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" />
+      <label for="comment">Comment</label>
+      <input type="text" name="comment" id="comment" />
+      <p>Rating</p>
+      <div>
+        <input type="radio" name="rating" id="5" value="5" />
+        <label for="5">5 (best)</label>
+        <input type="radio" name="rating" id="4" value="4" />
+        <label for="4">4</label>
+        <input type="radio" name="rating" id="3" value="3" />
+        <label for="3">3</label>
+        <input type="radio" name="rating" id="2" value="2" />
+        <label for="2">2</label>
+        <input type="radio" name="rating" id="1" value="1" />
+        <label for="1">1 (worst)</label>
+      </div>
+      <button class="submit-review">Submit</button>
+      <a href="/">Never Mind</a>
+    </form>
+  </body>
+</html>

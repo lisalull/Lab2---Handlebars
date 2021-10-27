@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Custom Pizza Builder</title>
+  </head>
+  <body>
+    <h1>Build Your Own Pizza</h1>
+    <form action="/your-pizza" method="GET" class="custom-form">
+      <label for="size">Size</label>
+      <select name="size" id="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+      <label for="toppings">How many toppings?</label>
+      <input type="number" name="toppings" id="toppings" />
+      <ul>
+        <li>Pepperoni</li>
+        <li>Sausage</li>
+        <li>Chicken</li>
+        <li>Mushroom</li>
+        <li>Olive</li>
+        <li>Green Pepper</li>
+        <li>Onion</li>
+        <li>Banana Pepper</li>
+        <li>Anchovies</li>
+        <li>Pineapple</li>
+      </ul>
+      <div>
+        <input type="checkbox" name="glutenfree" id="glutenfree" />
+        <label for="glutenfree">Gluten-Free Crust? ($2.00 extra)</label>
+      </div>
+      <label for="instructions">Special Instructions (Optional)</label>
+      <input type="text" name="instructions" id="instructions" />
+      <button>Calculate Price</button>
+    </form>
+    <a href="/">Never Mind</a>
+  </body>
+</html>

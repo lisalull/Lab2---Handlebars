@@ -1,0 +1,26 @@
+body {
+  font-family: "Bubblegum Sans", cursive;
+}
+
+.pizza-img {
+  width: 100px;
+  display: block;
+  padding: 5px;
+}
+
+.review-form,
+.custom-form {
+  display: flex;
+  flex-direction: column;
+}
+
+button,
+input,
+select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.free-delivery {
+  color: red;
+}
