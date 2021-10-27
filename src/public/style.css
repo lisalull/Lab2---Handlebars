@@ -1,4 +1,6 @@
-body {
+body,
+select,
+button {
   font-family: "Bubblegum Sans", cursive;
 }
 

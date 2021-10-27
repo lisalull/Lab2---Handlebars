@@ -68,12 +68,13 @@ pizzaRouter.post("/your-pizza", (req, res) => {
     freeDelivery =
       "Because your order meets the $15.00 minimum, you get FREE DELIVERY!";
   }
+  let finalPrice = price.toFixed(2);
   res.render("your-pizza", {
     size,
     toppings,
     glutenfree,
     instructions,
-    price,
+    finalPrice,
     freeDelivery,
   });
 });
